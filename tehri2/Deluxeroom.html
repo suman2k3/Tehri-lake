@@ -1,142 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Explore Rooms | Tehri Lake View</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Existing CSS Files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+<title>Deluxe Room | Tehri Lake View</title>
 
-    <style>
-        .room-page{
-            padding:100px 0;
-            background:#f5f5f5;
-        }
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/plugin.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
 
-        .room-title{
-            text-align:center;
-            margin-bottom:60px;
-        }
-
-        .room-title h2{
-            font-size:50px;
-            font-weight:700;
-            text-transform:uppercase;
-        }
-
-        .room-title span{
-            color:#3f97d0;
-        }
-        
-.room-page{
-    padding:80px 0;
-    background:#f5f5f5;
+<style>
+.room-detail{
+    padding:120px 0 80px;
+    background:#f8f8f8;
 }
 
-.room-title{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-.room-title h2{
-    font-size:50px;
-    font-weight:700;
-    text-transform:uppercase;
-}
-
-.room-title span{
-    color:#3f97d0;
-}
-
-.breadcrumb-outer{
-    background:url('images/breadcrumb.jpg') no-repeat center center;
-    background-size:cover;
-    position:relative;
-    padding:180px 0 100px;
-}
-
-.breadcrumb-outer:before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
+.room-image img{
     width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.45);
+    border-radius:10px;
 }
 
-.breadcrumb-content{
-    position:relative;
-    z-index:2;
-    text-align:center;
-}
-
-.breadcrumb-content h2{
-    color:#fff;
-    font-size:52px;
+.room-info h2{
+    font-size:42px;
     font-weight:700;
     margin-bottom:15px;
 }
 
-.breadcrumb-content p{
-    color:#fff;
+.room-subtitle{
+    color:#3f97d0;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.room-features{
+    margin:25px 0;
+}
+
+.room-features li{
+    list-style:none;
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.room-description{
     font-size:18px;
+    line-height:1.9;
 }
 
-.room-box{
-    background:#fff;
-    box-shadow:0 0 20px rgba(0,0,0,0.08);
-    margin-bottom:30px;
-}
-
-.room-box img{
-    width:100%;
-}
-
-.room-content{
-    padding:30px;
-}
-
-.room-content h3{
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.room-content .text-primary{
-    color:#3f97d0;
-    font-size:22px;
-}
-
-.room-content p{
-    margin-bottom:15px;
-}
-
-.btn-primary{
-    background:#3f97d0;
-    border:none;
-    padding:12px 30px;
-    border-radius:30px;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
+.book-btn{
+    margin-top:30px;
 }
 </style>
-    </style>
+
 </head>
 
 <body>
 
-<!-- Header -->
-<header class="main_header_area">
+<!-- Copy your existing header here -->
+      <!-- header start -->
+    <header class="main_header_area">
       <div class="header-content">
         <div class="container">
           <div class="links links-left">
@@ -149,7 +74,7 @@ a:hover {
               </li>
               <li>
                 <select class="wide">
-                  
+                  <option>Hindi</option>
                   <option>English</option>
                  
                 </select>
@@ -158,26 +83,14 @@ a:hover {
           </div>
           <div class="links links-right pull-right">
             <ul>
-             <!--  <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#login"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
-              <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#register"><i class="fa fa-pen" aria-hidden="true"></i> Register</a>
-              </li> -->
               <li>
                 <ul class="social-links">
                   <li>
                     <a href="https://www.facebook.com/profile.html?id=61589532052596" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                   </li>
-                <!--   <li>
-                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                  </li>
-                  <li> -->
+                  <li>
                     <a href="https://www.instagram.com/tehrilakeviewsunrisecottages/reels/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                   </li>
-                  <!-- <li>
-                    <a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
-                  </li> -->
                 </ul>
               </li>
             </ul>
@@ -257,7 +170,7 @@ a:hover {
 
   <!-- Button -->
   <div class="nav-btn">
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-orange">
       Enquire Now
     </a>
   </div>
@@ -271,121 +184,127 @@ a:hover {
       </div>
       <!-- Navigation Bar Ends -->
     </header>
+    <!-- header Ends -->
 
-
-<!-- Page Banner -->
-<section class="breadcrumb-outer">
-    <div class="container">
+    <!-- breadcrumb Starts -->
+    <section class="breadcrumb-outer">
+      <div class="container">
         <div class="breadcrumb-content">
-            <h2>EXPLORE ROOMS</h2>
-            <p>
-                Discover comfortable and peaceful accommodation at Tehri Lake View.
-                 Our rooms are designed to provide relaxation, scenic surroundings,
-                  and modern amenities for couples, families, and travelers visiting Tehri Lake.
-            </p>
+          <h2>DELUXE ROOM</h2>
+          <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">DELUXE ROOM</li>
+            </ul>
+          </nav>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Rooms Section -->
+<!-- Deluxe Room Details -->
 <section class="room-page">
     <div class="container">
 
-       
-
         <div class="row">
+            
 
-            <!-- Deluxe Room -->
-            <div class="col-md-4">
+            <div class="col-md-7">
                 <div class="room-box">
                     <img src="images/room1.jpg" alt="Deluxe Room">
+                    <div class="room-box" style="margin-top:20px; padding:20px; background:#fff;">
+    <h4>Why Choose This Room?</h4>
 
-                    <div class="room-content">
-                        <h3>DELUXE ROOM</h3>
+    <p>
+        Perfect for couples and solo travelers looking for a peaceful
+        and comfortable stay near Tehri Lake.
+    </p>
 
-                        <p class="text-primary">Comfort Stay</p>
-
-                        <p>
-                            <i class="fa fa-bed"></i> Cozy Bedroom
-                            &nbsp;&nbsp;
-                            <i class="fa fa-wifi"></i> Free Wifi
-                        </p>
-
-                        <p>
-                            Perfect for solo travelers and couples seeking
-                            a peaceful stay with comfortable interiors and
-                            beautiful surroundings near Tehri Lake.
-                        </p>
-
-                        <a href="Deluxeroom.html" class="btn btn-primary">
-                            VIEW DETAILS
-                        </a>
-                    </div>
+    <ul style="line-height:2;">
+        <li>✓ Scenic surroundings</li>
+        <li>✓ Modern amenities</li>
+        <li>✓ Comfortable bedding</li>
+        <li>✓ Free WiFi access</li>
+        <li>✓ 24×7 assistance</li>
+    </ul>
+</div>
                 </div>
             </div>
 
-            <!-- Family Room -->
-            <div class="col-md-4">
-                <div class="room-box">
-                    <img src="images/room2.jpg" alt="Family Room">
+            <div class="col-md-5">
 
-                    <div class="room-content">
-                        <h3>FAMILY ROOM</h3>
+                <h2 style="font-size:42px;font-weight:700;margin-bottom:10px;">
+                    DELUXE ROOM
+                </h2>
 
-                        <p class="text-primary">Spacious Comfort</p>
+                <p class="text-primary" style="font-size:24px;">
+                    Comfort Stay
+                </p>
 
-                        <p>
-                            <i class="fa fa-bed"></i> Family Space
-                            &nbsp;&nbsp;
-                            <i class="fa fa-wifi"></i> Free Wifi
-                        </p>
-
-                        <p>
-                            Spacious and comfortable rooms ideal for
-                            families and groups, offering a relaxing
-                            environment with modern facilities and scenic views.
-                        </p>
-
-                        <a href="Familyroom.html" class="btn btn-primary">
-                            VIEW DETAILS
-                        </a>
-                    </div>
+                <div style="color:#f5a623;font-size:22px;margin-bottom:20px;">
+                    ★★★★★
                 </div>
+
+                <p>
+                    <i class="fa fa-bed"></i> Cozy Bedroom
+                    &nbsp;&nbsp;
+                    <i class="fa fa-wifi"></i> Free Wifi
+                </p>
+
+                <hr>
+
+                <h4>Room Features</h4>
+
+                <ul style="line-height:2;font-size:16px;">
+                    <li>Air Conditioner</li>
+                    <li>Attached Modern Bathroom</li>
+                    <li>Free High-Speed WiFi</li>
+                    <li>Smart TV</li>
+                    <li>Tea / Coffee Maker</li>
+                    <li>24×7 Room Service</li>
+                    <li>Comfortable Double Bed</li>
+                    <li>Beautiful Interior Design</li>
+                </ul>
+
+                <a href="room-reservation.html"
+                   class="btn btn-primary"
+                   style="margin-top:20px;">
+                    BOOK NOW
+                </a>
+
             </div>
 
-            <!-- Lake View Room -->
-            <div class="col-md-4">
-                <div class="room-box">
-                    <img src="images/room3.jpg" alt="Lake View Room">
+        </div>
 
-                    <div class="room-content">
-                        <h3>LAKE VIEW ROOM</h3>
+        <div class="row" style="margin-top:60px;">
 
-                        <p class="text-primary">Nature Experience</p>
+            <div class="col-md-12">
 
-                        <p>
-                            <i class="fa fa-bed"></i> Scenic View
-                            &nbsp;&nbsp;
-                            <i class="fa fa-wifi"></i> Free Wifi
-                        </p>
+                <h3>About This Room</h3>
 
-                        <p>
-                            Enjoy a refreshing stay with peaceful lake
-                            surroundings, cozy interiors, and a memorable
-                            experience close to nature.
-                        </p>
+                <p style="font-size:17px;line-height:1.9;">
+                    Perfect for solo travelers and couples seeking a peaceful stay
+                    with comfortable interiors and beautiful surroundings near
+                    Tehri Lake. The Deluxe Room combines modern amenities with
+                    elegant design, creating a relaxing atmosphere for a memorable
+                    mountain getaway.
+                </p>
+<p style="font-size:17px;line-height:1.9;">
+    <span style="background-color: #fff3a0; font-weight: bold; padding: 3px 6px; border-radius: 4px;">
+        Enjoy a comfortable bed, free WiFi, attached bathroom,
+        room service, and a cozy environment designed to make
+        your stay enjoyable and refreshing.
+    </span>
+</p>
 
-                        <a href="Lakeviewroom.html" class="btn btn-primary">
-                            VIEW DETAILS
-                        </a>
-                    </div>
-                </div>
             </div>
 
         </div>
 
     </div>
-     <footer>
+</section>
+
+<!-- Copy your existing footer here -->
+ <footer>
       <div class="footer-top pad-bottom-20">
         <div class="container">
           <div class="footer-logo text-center">
@@ -487,7 +406,45 @@ a:hover {
     TheClickerIndia.com
   </a>
 </p>
-</section>
+               <!--  <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+           <!--  <div class="col-lg-4 mar-bottom-10">
+              <div class="tripadvisor-logo text-center">
+                <img src="images/tripadvisor.png" alt="image">
+              </div>
+            </div>
+            <div class="col-lg-4 mar-bottom-10">
+              <div class="copyright-links mar-bottom-20">
+                <ul>
+                  <li><a href="#">Accomodations</a></li>
+                  <li><a href="#">Book Now</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+              </div>
+              <div class="playstore-links">
+                <img src="images/icons/appstore.png" alt="image" class="mar-right-10">
+                <img src="images/icons/googleplay.png" alt="image">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
 
 </body>
