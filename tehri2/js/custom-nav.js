@@ -15,6 +15,58 @@ $(window).on('scroll', function(event) {
 /*======== Doucument Ready Function =========*/
 jQuery(document).ready(function () {
 
+    /**
+     * Highlight current top-level navigation item.
+     */
+    (function setActiveNavigation() {
+      var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      var sectionMap = {
+        'aboutus.html': 'aboutus.html',
+        'restaurant.html': 'restaurant.html',
+        'restaurant-menu.html': 'restaurant.html',
+        'restaurant-reserve.html': 'restaurant.html',
+        'restaurant-about.html': 'restaurant.html',
+        'blog-full.html': 'blog-full.html',
+        'blog-right.html': 'blog-full.html',
+        'single-left.html': 'blog-full.html',
+        'single-right.html': 'blog-full.html',
+        'single-full.html': 'blog-full.html',
+        'contact.html': 'contact.html',
+        'room.html': 'room.html',
+        'Deluxeroom.html': 'room.html',
+        'Familyroom.html': 'room.html',
+        'Lakeviewroom.html': 'room.html',
+        'roomlist-1.html': 'room.html',
+        'roomlist-2.html': 'room.html',
+        'room-select.html': 'room.html',
+        'detail-full.html': 'room.html',
+        'detail-sidebar.html': 'room.html',
+        'availability.html': 'room.html',
+        'booking.html': 'room.html'
+      };
+      var activeHref = sectionMap[currentPage] || currentPage;
+      var navMenus = $('#responsive-menu, .responsive-menu');
+
+      navMenus.find('li').removeClass('active');
+
+      navMenus.each(function () {
+        var menu = $(this);
+        var activeLink = menu.find('a').filter(function () {
+          var href = $(this).attr('href');
+          return href && href.split('/').pop() === activeHref;
+        }).first();
+
+        if (!activeLink.length && (currentPage === '' || currentPage === 'index.html')) {
+          activeLink = menu.find('a[href="index.html"]').first();
+        }
+
+        if (activeLink.length) {
+          activeLink.closest('li').addClass('active');
+          activeLink.parents('li.submenu').first().addClass('active');
+        }
+      });
+    }());
+
       // slicknav
     /**
      * Slicknav - a Mobile Menu
@@ -83,4 +135,3 @@ jQuery(document).ready(function () {
     }
 
 });
-

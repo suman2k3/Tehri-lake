@@ -3407,6 +3407,100 @@ ul.amenities li{
     margin-bottom: 30px;
 }
 
+.blog-full-list .news-item {
+    height: 100%;
+}
+
+.blog-full-list .news-image {
+    height: 348px;
+}
+
+.blog-full-list .news-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-full-list .news-content h4 {
+    line-height: 1.45;
+    text-transform: uppercase;
+}
+
+.blog-full-list .news-content > p:not(.date) {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.blog-read-more {
+    background: #f8f6f1;
+}
+
+.blog-read-more .section-title {
+    margin-bottom: 45px;
+}
+
+.read-more-article {
+    background: #fff;
+    border: 1px solid #eee4d8;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    padding: 30px;
+    scroll-margin-top: 120px;
+}
+
+.read-more-article:last-child {
+    margin-bottom: 0;
+}
+
+.read-more-article img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.read-more-article h3 {
+    line-height: 1.35;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.read-more-article p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.read-more-article .date {
+    color: #f26b21;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.read-more-points {
+    margin: 18px 0 24px;
+}
+
+.read-more-points li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.read-more-points i {
+    color: #f26b21;
+    margin-right: 8px;
+}
+
+@media(max-width: 991px){
+  .read-more-article img{margin-bottom: 25px;}
+}
+
+@media(max-width: 639px){
+  .read-more-article{padding: 22px;}
+  .read-more-article img{height: 240px;}
+}
+
 
 @media(max-width: 991px){
   .overwiew-map{margin-top: 30px;}
@@ -4170,6 +4264,66 @@ section.menu.lunch .menu-item {
     border: 1px solid #f1f1f1;
 }
 
+/* Category thumbnails for restaurant menu cards */
+.menu-item.menu-card-with-category-image {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    min-height: 90px;
+    overflow: hidden;
+    padding: 14px 92px 14px 14px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item.menu-card-with-category-image:hover {
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.menu-item.menu-card-with-category-image .menu-content {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    padding-left: 0;
+    width: 100%;
+}
+
+.menu-item.menu-card-with-category-image .menu-category-image {
+    border-radius: 8px;
+    flex: 0 0 60px;
+    height: 60px;
+    overflow: hidden;
+    width: 60px;
+}
+
+.menu-item.menu-card-with-category-image .menu-category-image img {
+    border-radius: 8px;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.menu-item.menu-card-with-category-image:hover .menu-category-image img {
+    transform: scale(1.05);
+}
+
+.menu-item.menu-card-with-category-image h4 {
+    flex: 1 1 auto;
+    margin: 0;
+    min-width: 0;
+    padding-right: 10px;
+}
+
+.menu-item.menu-card-with-category-image .menu-content span {
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
 @media(max-width: 1100px){
   .reservation-box{display: block; width: 100%;}
   .reservation-image, .restaurant-form, .reservation-image img{width: 100%;}
@@ -4185,6 +4339,38 @@ section.menu.lunch .menu-item {
   .row.isotopeSelector{margin: 0; text-align: center;}
 
   .menu-image, .menu-image img, .menu-content, .menu-content span{width: 100%; padding: 0; position: relative; display: inline-block;}
+
+  .menu-item.menu-card-with-category-image {
+    min-height: 78px;
+    padding: 12px 76px 12px 12px;
+  }
+
+  .menu-item.menu-card-with-category-image .menu-content {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .menu-item.menu-card-with-category-image .menu-category-image {
+    flex-basis: 50px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .menu-item.menu-card-with-category-image .menu-content span {
+    font-size: 15px;
+    height: 100%;
+    padding: 0 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 68px;
+  }
+
+  .menu-item.menu-card-with-category-image h4 {
+    font-size: 15px;
+    line-height: 1.35;
+  }
 
   .menu-content span{padding: 5px;}
 
