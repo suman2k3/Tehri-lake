@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact Us | Hotux</title>
+    <title>Contact Us | Tehri Lekeview-Sunrise Cottages</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <!-- Bootstrap core CSS -->
@@ -17,8 +17,8 @@
     <!--Plugin CSS-->
     <link href="css/plugin.css" rel="stylesheet" type="text/css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="../../../ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
   </head>
 
@@ -94,7 +94,7 @@
 
     <!-- Rooms Dropdown -->
     <li class="submenu dropdown">
-      <a href="room-select.html" class="dropdown-toggle" data-toggle="dropdown">
+      <a href="room.html" class="dropdown-toggle" data-toggle="dropdown">
         Rooms
         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </a>
@@ -203,8 +203,21 @@
                   <i class="fa fa-envelope"></i>
                 </div>
                 <div class="info-content">
-                  <p><a href="info@tehrilakeview.com" class="__cf_email__" data-cfemail="info@tehrilakeview.com">[info@tehrilakeview.com]</a></p>
-                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fe7eae3ffcfe7e0fbfaf7a1ece0e2a1e1ff">[email&#160;protected]</a></p>
+                  <div class="info-content">
+    <p>
+        <a href="mailto:info@tehrilakeview.com"
+           style="color:#ffffff;">
+            info@tehrilakeview.com
+        </a>
+    </p>
+
+    <p>
+        <a href="mailto:booking@tehrilakeview.com"
+           style="color:#ffffff;">
+            booking@tehrilakeview.com
+        </a>
+    </p>
+</div>
                 </div>
               </div>
             </div>
@@ -243,35 +256,52 @@ packages? Contact us anytime and we'll help you find the best stay option.
           </div>
         </div>
         <div class="contact-map">
-          <div class="row">
-            <div class="col-lg-6">
-              <div id="map" style="height: 535px; width: 100%"></div>
-            </div>
+    <div class="row">
+
+        <div class="col-lg-6">
+            <iframe
+                src="https://maps.google.com/maps?q=30.3781,78.4804&z=15&output=embed"
+                style="width:100%; height:100%; min-height:535px; border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
             <div class="col-lg-6">
               <div id="contact-form" class="contact-form">
                 <h3>Keep in Touch</h3>
                 <div id="contactform-error-msg"></div>
 
-                <form method="post" action="#" name="contactform" id="contactform">
-                  <div class="form-group">
-                    <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="phone" class="form-control" id="phnumber" placeholder="Phone">
-                  </div>
-                  <div class="textarea">
-                    <textarea name="comments" placeholder="Enter a message"></textarea>
-                  </div>
-                  <div class="comment-btn text-right">
-                    <input type="submit" class="btn btn-orange" id="submit" value="Send Message">
-                  </div>
-                </form>
+               <form action="https://formspree.io/f/mpqedqlv" method="POST">
+
+    <div class="form-group">
+        <input type="text" name="First Name" class="form-control" placeholder="First Name" required>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="Last Name" class="form-control" placeholder="Last Name" required>
+    </div>
+
+    <div class="form-group">
+        <input type="email" name="Email" class="form-control" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="Phone" class="form-control" placeholder="Phone Number" required>
+    </div>
+
+    <div class="textarea">
+        <textarea name="Message" placeholder="Enter your message" required></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="New Enquiry - Tehri Lake View">
+
+    <div class="comment-btn text-right">
+        <button type="submit" class="btn btn-orange">
+            Send Message
+        </button>
+    </div>
+
+</form>
               </div>
             </div>
           </div>
