@@ -1951,6 +1951,16 @@ section.about-style-3 .intro-thumb .intro-img-3 {
     transform: translate3d(0,0,0);
     transition: all ease-in-out 0.5s;
 }
+
+section.services .room-image{
+    height: 360px;
+}
+
+section.services .room-image img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .room-content{
 	padding: 18px 25px 25px;
 	background: #fff;
